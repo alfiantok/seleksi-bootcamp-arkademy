@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arkademy Bootcamp</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.logo img{
+			width: 120px;
+		}
+		.mybutton{	
+			float: right;
+			background: #F3AC13;
+			border: none;
+			padding: 10px 40px 10px 40px;
+		}
+		.mybutton:hover,.mybutton:active{
+			background: #BF8405 !important;
+		}
+		.modal-header{
+			border-bottom: none !important;
+		}
+		.thead-light th{
+			background: #f1f1f1 !important;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="bg-default shadow">
+			<div class="nav navbar">
+				<div class="logo navbar-brand">
+					<a href="6B.html">
+						<img src="https://www.arkademy.com/asset/img/logo%20arkademy-tech%20academy-03.png">
+					</a>
+				</div>
+			</div>
+		</nav>
+		<main>
+
+			<div class="container mt-5">
+				<div>
+					<a href="javascript:void(0)" class="mybutton btn btn-primary mb-3 mt-5 ml-auto shadow-sm" data-toggle="modal" data-target="#openAdd">
+						ADD
+					</a>
+				</div>
+				<table class="table table-bordered">
+					<thead class="thead-light">
+						<tr>
+							<th>Name</th>
+							<th>Work</th>
+							<th>Salary</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Rebecca</td>
+							<td>Front End</td>
+							<td>Rp 10.000.000</td>
+							<td width="15%">
+								<a href="#" class="btn" onclick="swal('Delete Success','Data (Nama) Berhasil Dihapus','success');"> <i class="fa fa-trash-o"></i> </a> |
+								<a href="#" class="btn" data-target="#openEdit" data-toggle="modal"> <i class="fa fa-edit"></i> </a> 
+							</td>
+						</tr>
+						<tr>
+							<td>Vita</td>
+							<td>Back End</td>
+							<td>Rp 12.000.000</td>
+							<td width="15%">
+								<a href="#" class="btn" onclick="swal('Delete Success','Data (Nama) Berhasil Dihapus','success');"> <i class="fa fa-trash-o"></i> </a> |
+								<a href="#" class="btn" data-target="#openEdit" data-toggle="modal"> <i class="fa fa-edit"></i> </a> 
+							</td>
+						</tr>
+						<tr>
+							<td>Huda</td>
+							<td>Back End</td>
+							<td>Rp 12.000.000</td>
+							<td width="15%">
+								<a href="#" class="btn" onclick="swal('Delete Success','Data (Nama) Berhasil Dihapus','success');"> <i class="fa fa-trash-o"></i> </a> |
+								<a href="#" class="btn" data-target="#openEdit" data-toggle="modal"> <i class="fa fa-edit"></i> </a> 
+							</td>
+						</tr>
+						<tr>
+							<td>Kiky</td>
+							<td>Front End</td>
+							<td>Rp 10.000.000</td>
+							<td width="15%">
+								<a href="#" class="btn" onclick="swal('Delete Success','Data (Nama) Berhasil Dihapus','success');"> <i class="fa fa-trash-o"></i> </a> |
+								<a href="#" class="btn" data-target="#openEdit" data-toggle="modal"> <i class="fa fa-edit"></i> </a> 
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- Add Modal -->
+			<div class="modal fade" id="openAdd">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content mt-5">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Add Data</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control" placeholder="Name">
+								<select class="form-control mt-4">
+									<option>Work</option>
+									<option>Front End Dev</option>
+									<option>Back End Dev</option>
+								</select>
+								<select class="form-control mt-4">
+									<option>Salary</option>
+									<option>Rp 10.000.000</option>
+									<option>Rp 12.000.000</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="container">
+							<a href="javascript:void(0)" class="mybutton btn btn-primary mb-3 mr-0 ml-auto shadow-sm" data-toggle="modal" data-target="#openAdd">
+								ADD
+							</a>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Edit Modal -->
+			<div class="modal fade" id="openEdit">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content mt-5">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Edit Data</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control" placeholder="Name">
+								<select class="form-control mt-4">
+									<option>Work</option>
+									<option>Two</option>
+									<option>Three</option>
+								</select>
+								<select class="form-control mt-4">
+									<option>Salary</option>
+									<option>Two</option>
+									<option>Three</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="container">
+							<a href="javascript:void(0)" class="mybutton btn btn-primary mb-3 mr-0 ml-auto shadow-sm" data-toggle="modal" data-target="#openAdd">
+								Edit
+							</a>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+			
+		</main>
+	</header>
+
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

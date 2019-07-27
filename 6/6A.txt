@@ -1,0 +1,1 @@
+SELECT nama.name,work.name AS work,kategori.salary FROM nama LEFT JOIN kategori ON nama.id_salary=kategori.id LEFT JOIN work ON nama.id_work=work.id GROUP BY nama.id ASC
