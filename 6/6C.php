@@ -202,7 +202,7 @@ $conn = mysqli_connect("localhost","root","","arkademy");
 			
 			
 			function toRupiah($data){
-				echo number_format($data);
+				echo "Rp ".number_format($data);
 			}
 
 			?>
