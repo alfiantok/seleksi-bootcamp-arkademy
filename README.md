@@ -57,7 +57,10 @@ $ node 5.js
 
 ## Nomor 6
 
-Pertama jangan lupa import arkademy.sql (terlampir) di dalam phpmyadmin
+
+Buat database dengan nama arkademy
+
+import arkademy.sql (terlampir) di dalam phpmyadmin
 
 lalu copy file 6C.php ke dalam direktori xampp/htdocs/arkademy
 
